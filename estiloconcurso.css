@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans Extrabold", sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: rgb(0, 0, 0);
+    line-height: 1.6;
+    padding-left: 240px; /* Espacio para la barra de navegación */
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+header {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Nuevo gradiente de colores */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+nav {
+    position: fixed;
+    top: 20%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px 0 0 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li {
+    margin: 20px 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 15px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    background-color: #4e54c8;
+    color: #ffcc00;
+    transform: translateX(10px);
+}
+main ul {
+    padding: 20px;
+    list-style-type: none;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+main li {
+    padding: 12px 20px;
+    border-bottom: 1px solid #e0e0e0; 
+    font-size: 1.1em;
+    color: #333;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+main li:last-child {
+    border-bottom: none;
+}
+
+main li:hover {
+    background-color: #f4f4f4; 
+    padding-left: 25px; 
+}
+
+main li a {
+    text-decoration: none;
+    color: inherit; 
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+main li a:hover {
+    color: #4e54c8; 
+}
+
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+}
+
+h2 {
+    color: #4e54c8;
+    font-size: 2em;
+    border-bottom: 3px solid #4e54c8;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #222;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
+}
+li img{
+    max-width: 20%;
+}
+li.bitcoin{
+    background-image: url("bitcoin.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+li.etherum{
+    background-image: url("ethereum-eth-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+li.biance{
+    background-image: url("biancecoin.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+li.cardano{
+    background-image: url("cardano.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+li.solana{
+    background-image: url("solana.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+li.polkadot{
+    background-image: url("polkadot.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+li.dogecoin{
+    background-image: url("dogecoin.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-left: 0;
+    }
+    nav {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    main {
+        padding: 20px;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.2em;
+    }
+    nav ul li {
+        margin: 10px 5px;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    main {
+        padding: 15px;
+    }
+}
